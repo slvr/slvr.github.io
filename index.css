@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+.wide {
+    letter-spacing:4px
+}
+.hover-opacity:hover {
+    opacity:0.60
+}
+.top,.bottom{
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+.top{
+    top:0
+}
+.bottom{
+    bottom:0
+}
+.bar {
+    width:100%;
+    overflow:hidden;
+  /*  background-color: #fff*/
+}
+.center .bar {
+    display:inline-block;
+    width:auto
+}
+.bar .bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block
+}
+.bar .dropdown-hover,.bar .dropdown-click{
+    position:static;
+    float:left
+}
+.bar .button{
+    white-space:normal
+}
+.bar:before,.bar:after{
+    content: "";
+    display: table;
+    clear: both
+}
+.bar-item{
+    padding:8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block
+}
+.button, .foot-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    white-space:normal
+}
+.button:hover{
+    color:#000!important;
+  /*  background-color:#ccc!important*/
+}
+.foot-button:hover{
+    color:#777!important
+}
+.black,.hover-black:hover {
+    color:#fff!important;
+    background-color:#000!important
+}
+.hide-medium {
+    display:none!important
+}
+.hide-large {
+    display:none!important
+}
+.right {
+    float:right!important
+}
+.hide-small {
+    display:none!important
+}
+.hide {
+    display:none!important
+}
+.white {
+    color:#000!important;
+    background-color:#fff!important
+}
+.hover-red:hover {
+    color:#fff!important;
+    background-color:#f44336!important
+}
+.display-container{
+    position:relative;
+    display:block
+}
+.opacity-min {
+    opacity:0.75
+}
+.display-middle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+.center{
+    text-align:center!important;
+ /*   display:inline-block;*/
+    width:auto
+}
+.padding-large{
+    padding:12px 24px!important
+}
+.xlarge{
+    font-size:24px!important
+}
+.animate-opacity{
+    animation:opac 0.8s
+}
+@keyframes opac{
+    from{opacity:0} to{opacity:1}
+}
+body,h,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif
+}
+body,html {
+    height:100%;
+    color: #777;
+    line-height: 1.8
+}
+.bgimg-1 {
+    background-image: url('img1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%
+}
+.bgimg-2 {
+    background-image: url('img2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px
+}
+.bgimg-3 {
+    background-image: url('img3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px
+}
+.wide {
+    letter-spacing: 10px
+}
+.hover-opacity{
+    cursor: pointer
+}
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll
+    }
+}
+.content {
+    max-width:980px;
+    margin:auto
+}
+.container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,
+.bar:before,.bar:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.container,.panel{
+    padding:0.01em 16px
+}
+.panel{
+    margin-top:16px;
+    margin-bottom:16px
+}
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{
+    padding:0 8px
+}
+.container {
+    padding:0.01em 16px
+}
+.padding-64 {
+    padding-top:64px!important;
+    padding-bottom:64px!important
+}
+.col,.half,.third,.twothird,.threequarter,.quarter {
+    float:left;
+    width:100%
+}
+@media (min-width:601px) {
+    .col.thirdcol,.third {
+        width:33.33333%
+    }
+    .col.halfcol,.half {
+        width:49.99999%
+    }
+    .col.twothirdcol,.twothird {
+        width:66.66666%
+    }
+}
+.margin-right {
+    margin-right:16px!important
+}
+.round {
+    border-radius:4px
+}
+.image {
+    max-width:100%;
+    height:auto
+}
+img {
+    vertical-align:middle
+}
+a {
+    color:inherit
+}
+.opacity {
+    opacity:0.60
+}
+.hover-opacity-off:hover {
+    opacity:1
+}
+.large {
+    font-size:18px!important
+}
+.padding-16 {
+    padding-top:16px!important;
+    padding-bottom:16px!important;
+}
+.light-grey {
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
+.dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover {
+    color:#fff!important;
+    background-color:#616161!important
+}
+.padding-small {
+    padding:4px 8px!important
+}
+.xxlarge {
+    font-size:36px!important
+}
+.text-white,.hover-text-white:hover {
+    color:#fff!important
+}
+.bar-block .dropdown-hover,.bar-block .dropdown-click{
+    width:100%
+}
+.bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{
+    min-width:100%
+}
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{
+    width:100%;
+    text-align:left;
+    padding:8px 16px
+}
+.bar-block .bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none
+}
+.bar-block.center .bar-item{
+    text-align:center
+}
+.block{
+    display:block;
+    width:100%
+}
+.section{
+    margin-top:16px!important;
+    margin-bottom:16px!important
+}
+.round-large{
+    border-radius:8px
+}
+.greyscale{
+    filter:grayscale(75%)
+}
+margin-bottom{
+    margin-bottom:16px!important
+}
+.hover-text-black:hover{
+    color:#000!important
+}
+.border{
+    border:1px solid #ccc!important
+}
+.input{
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+@keyframes animatetop{
+    from{
+        top:-300px;
+        opacity:0
+    } to{
+        top:0;
+        opacity:1
+    }
+}
+.card{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.show{
+    display:block!important
+}
