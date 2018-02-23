@@ -11,7 +11,7 @@
     <body>
         <!-- Navbar -->
         <div class="top">
-            <div class="bar" id="navBar">
+            <div class="bar card white" id="navBar">
                 <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFuntion()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -212,17 +212,6 @@
         </footer>
 
         <script>
-
-        window.onscroll = function() {myFunction()};
-        function myFunction() {
-            var navbar = document.getElementById("navBar");
-            if (document.body.scrollTop > 560 || document.documentElement.scrollTop > 560) {
-                navbar.className = "bar" + " card" + " animate-top" + " white";
-            } 
-            else {
-                navbar.className = navbar.className.replace(" card animate-top white", "");
-            }
-        }
 
         function toggleFunction() {
             var x = document.getElementById("mobileNav");
