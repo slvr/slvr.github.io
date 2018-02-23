@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="images/favicon.png">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col halfcol center padding-large">
                     <p><b><i class="fa fa-user margin-right"> My Overly Photogenic Face</i></b></p></br>
-                    <img src="PP.png" class="round image opacity hover-opacity-off" alt="Flattering Image" width="400" height="333">
+                    <img src="images/PP.png" class="round image opacity hover-opacity-off" alt="Flattering Image" width="400" height="333">
                 </div>
                 <div class="col halfcol padding-large">
                     <p>Personally, I enjoy political and economic documentaries, reading books on topics I am nowhere near an expert in, skiing, rock climbing, and writing blurbs on my website as if this were a dating site (insert "long walks on the beach" joke).</p>
@@ -89,24 +89,69 @@
 
         <div class="content container padding-64" id="profile">
             <h3 class="center">Notable Projects</h3>
-            <ul>
-                <li><a href="">The Art of Computer Programming - 1.2.8 Q37</a> [Must Translate to Web Applet]</li>
-                <li><a href="https://github.com/slvr/Inventaire-Informatique">Système d'inventaire pour L. Fournier & Fils Inc.</a></li>
-                <li><a href="https://github.com/slvr/Simple-File-System">File System created for COMP 310 - Operating Systems</a></li>
-                <li><a href="">Pandemic [Board game, re-created in Unity]</a> [WIP]</li>
-                <li><a href="https://github.com/ealhomsi/PartyBNB">PartyBNB</a> - Application created at Hackatown 2018</li>
-                <li><a href="Lionfish.pdf">Quantifying the <i>Pterois volitans</i> Caribbean Invasion</a></li>
-                <li><a href="Genetics.pdf">Changing Your Own Genetic Destiny</a> - The Genetics and Epigenetics of Neuroplasticity and Neuronal Functioning</li>
-                <li><a href="index.html">This website!</a> [Forever a WIP]</li>
-            </ul>
+           <!-- <ul>
+                <li><a href="pdfs/Genetics.pdf">Changing Your Own Genetic Destiny</a> - The Genetics and Epigenetics of Neuroplasticity and Neuronal Functioning</li>
+            </ul> -->
+            <div class="row-padding center">
+                <div class="col quartercol">
+                    <a href="https://github.com/slvr/Inventaire-Informatique">
+                        <img src="images/Fournier.png" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    Système d'inventaire pour L. Fournier & Fils Inc.
+                </div>
+                <div class="col quartercol">
+                    <a href="https://github.com/COMP361/f2017-group6">
+                        <img src="images/Pandemic.jpg" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    Pandemic Board Game, re-created in Unity [WIP]
+                </div>
+                <div class="col quartercol">
+                    <a href="https://github.com/ealhomsi/PartyBNB">
+                        <img src="images/PartyBNB.png" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    PartyBNB - Application created at Hackatown 2018
+                </div>
+                <div class="col quartercol">
+                    <a href="https://github.com/slvr/Simple-File-System">
+                        <img src="images/icon-file.png" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    File System created for COMP 310 - Operating Systems
+                </div>
+            </div>
+            <div class="row-padding center">
+                <div class="col quartercol">
+                    <a href="https://github.com/slvr/CoinGrab">
+                        <img src="images/Coin-Stack.png" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    The Art of Computer Programming - 1.2.8 Q37
+                </div>
+                <div class="col quartercol">
+                    <a href="pdfs/Lionfish.pdf">
+                        <img src="images/Lionfish.jpg" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    Quantifying the <i>Pterois volitans</i> Caribbean Invasion
+                </div>
+                <div class="col quartercol">
+                    <a href="pdfs/Genetics.pdf">
+                        <img src="images/neuroplast.png" style="width:100%" class="hover-opacity">
+                    </a></br>
+                    Changing Your Own Genetic Destiny</a> - The Genetics and Epigenetics of Neuroplasticity and Neuronal Functioning
+                </div>
+                <div class="col quartercol">
+                    <a href="pdfs/index.html">
+                        <img src=images/img1-2.jpg style="width:100%" class="hover-opacity">
+                    </a></br>
+                    This Website! [Forever a WIP]
+                </div>
+            </div>
         </div>
         <div class="content container padding-32">
             <h3 class="center">Notes</h3>
             <ul>
-                <li><a href="COMP206.pdf">COMP 206 - Introduction to Software Systems</a></li>
-                <li><a href="MATH240.pdf">MATH 240 - Discrete Structures I</a></li>
-                <li><a href="MATH323.pdf">MATH 323 - Probability</a></li>
-                <li><a href="MATH340.pdf">MATH 340 - Discrete Structures II</a> [WIP]</li>
+                <li><a href="pdfs/COMP206.pdf">COMP 206 - Introduction to Software Systems</a></li>
+                <li><a href="pdfs/MATH240.pdf">MATH 240 - Discrete Structures I</a></li>
+                <li><a href="pdfs/MATH323.pdf">MATH 323 - Probability</a></li>
+                <li><a href="pdfs/MATH340.pdf">MATH 340 - Discrete Structures II</a> [WIP]</li>
             </ul>
         </div>
 
@@ -171,7 +216,7 @@
         window.onscroll = function() {myFunction()};
         function myFunction() {
             var navbar = document.getElementById("navBar");
-            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            if (document.body.scrollTop > 560 || document.documentElement.scrollTop > 560) {
                 navbar.className = "bar" + " card" + " animate-top" + " white";
             } 
             else {
